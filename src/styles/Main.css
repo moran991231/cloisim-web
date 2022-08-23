@@ -1,5 +1,12 @@
 .main-con{
     display: flex;
     flex-direction: column;
-    /* background-color: antiquewhite; */
+    align-items: center;
+}
+
+.main-disconnect-btn{
+    width: fit-content;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0.2rem;
 }

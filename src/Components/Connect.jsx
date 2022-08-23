@@ -2,19 +2,17 @@ import React, { useState } from "react";
 
 import * as ROSLIB from "roslib"
 
-function Connect({setConnection, setRos}){
+function Connect({setConnection, ros}){
 
     const [url, setUrl] = useState("ws://localhost:9090");
     const onUrlChange = (e) => setUrl(e.value) 
     const onConnectClick=()=>{
-        
-        const ros = new ROSLIB.Ros();
+         
         ros.connect(url);
         setConnection("wait");
         setTimeout(()=>
         { 
-            if (ros.isConnected){
-                setRos(ros);
+            if (ros.isConnected){ 
                 alert("Connection succeeded")
                 setConnection("connected");
             }else{
