@@ -1,0 +1,40 @@
+.control-con{
+    width: 100%;
+}
+
+
+.cloi-con{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.cloi-btn-con{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.cloi-btn{
+    border: none;
+    border-radius: 0.2rem;
+    width: fit-content;
+    padding: 0.2rem;
+    font-size: 1.3rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cloi-btn:hover{
+    color:rgb(197, 54, 83);
+    background-color: rgb(158, 223, 223);
+}
+
+
+.cloi-cam-con{
+    width: 640px;
+    height: 480px; 
+}
